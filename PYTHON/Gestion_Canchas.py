@@ -31,7 +31,7 @@ def menu():
         print("\n")
         opcion = int(input("que opcion desea realizar: "))
         if (opcion == 1):
-            pass
+            Gestion_Clientes()
         elif(opcion == 2):
             pass
         elif (opcion == 3):
@@ -108,7 +108,7 @@ def validaciones():
 
 def Gestion_Clientes():
     '''
-    Esta es la gestion de clientes que lo que hace es registrar a los clientes para que puedas hacer las reservas 
+    Esta es la gestion de clientes  lo que hace es registrar a los clientes para que puedas hacer las reservas 
     y puedas opcionar a los otros modulos
     '''
     while(True):
