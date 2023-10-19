@@ -9,11 +9,13 @@ respons=[]
 clientes=[]
 
 
+
 '''
 este es el menu principal de todas las gestiones 
 este menu es lo basico y lo que hace es que cada 1 es un modulo
 '''
 def menu():
+    validacion_menu()
     '''
     este es el menu principal de todas las gestiones 
     este menu es lo basico y lo que hace es que cada 1 es un modulo
@@ -85,7 +87,6 @@ def validaciones():
                 continue
             else:
                 print(admins)
-                menu()
         elif(opcion == 2):
             print("Ingrese su codigo")
             cod = int(input())
@@ -97,7 +98,7 @@ def validaciones():
             dirrecion = input()
             print("Registre su telefono")
             telefono = int(input())
-            respons.append(cod,nombre,apellido,dirrecion,telefono)
+            respons.append("codigo: ",cod,"nombre: ",nombre,"apellido: ",apellido,"direccion: ",dirrecion,"telefono: ",telefono)
             print(respons)
         elif(opcion == 3): 
             Gestion_Clientes()
@@ -133,3 +134,8 @@ def Gestion_Clientes():
         else:
             print(clientes)
             menu()
+
+def validacionMenu():
+    pass
+
+    
